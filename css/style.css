@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +12,48 @@ body{
     align-items: center;
     justify-content: center;
     background-color: #f1f1f1;
+}
+
+.navs {
+    opacity: 0.9;
+    background: #141d1f;
+   top: 0%;
+   /* width: 100%; */
+   z-index: 9999;
+
+   padding: 1em;
+   text-align: center;
+   text-size-adjust: 80%;
+   word-spacing: 30px;
+
+    
+}
+
+
+.nav__button{
+    position: relative;
+    /* margin: auto; */
+    align-self: center;
+    text-align: center;
+    /* opacity: -0.5; */
+
+    padding: 10px;
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    border-spacing: 15px;
+
+}
+
+.nav__button:link{
+    text-decoration: none;
+}
+
+.nav__button:hover{
+
+    background-color: rgba(255, 255, 255, 0.212);
+    border-radius: 15px 50px 30px;
 }
 
 .about-section{
