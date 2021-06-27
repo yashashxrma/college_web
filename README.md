@@ -1,4 +1,9 @@
 
+# College Website
+
+This website is a student website that uses HTML CSS js django.
+
+
 ## Installation 
 
 ### installing python3
