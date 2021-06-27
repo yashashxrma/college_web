@@ -4,9 +4,9 @@
 }
 :root{
     --bg-shape-color:linear-gradient(120deg,  #343A4F, #0F1620) ;
-   --lightblue: #3D9DEA;
-   --darkblue: #4A4EEE;
-   --text-color: #D5E1EF;
+   --lightblue: #F9172B;
+   --darkblue: #FC7B28;
+   --text-color: #FFFF24;
   }
 img{
     display: block;
@@ -14,13 +14,17 @@ img{
     height: 100%;
 
 }
+body{
+    background-color: #F9172B;
+}
 .navs {
     opacity: 0.9;
-    background: #141d1f;
+    background: #FDC700;
    top: 0%;
    /* width: 100%; */
    z-index: 9999;
-
+   /* font-size: large */
+    font-weight: bold;
    padding: 1em;
    text-align: center;
    text-size-adjust: 80%;
@@ -36,9 +40,10 @@ img{
     align-self: center;
     text-align: center;
     /* opacity: -0.5; */
-
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
     padding: 10px;
-    color:#fdcd3b;
+    color:whitesmoke;
     margin-left: 15px;
     margin-right: 15px;
     justify-content: center;
@@ -52,7 +57,7 @@ img{
 
 .nav__button:hover{
 
-    background-color: rgba(255, 255, 255, 0.212);
+    background-color: #FFFF24;
     border-radius: 15px 50px 30px;
 }
 
@@ -125,7 +130,7 @@ img{
     padding-top: 40px;
     margin-left: 3cm;
     margin-right: 1cm;
-    background-color: white;
+    
 }
 .card{
     display: grid;
@@ -136,7 +141,7 @@ img{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: rgb(190, 181, 181);
     border-radius: 5%  5% 5% 5%; 
-    background: linear-gradient(0deg, #fdcd3b 70%, #ffed4b 60%); 
+    background: linear-gradient(0deg, #FC7B28 70%, #FA442A 60%); 
 }
 
 .card:hover{
@@ -148,8 +153,9 @@ img{
     display: flex;
     flex-direction: column;
     margin:0.5cm;
-    color: rgb(58, 56, 56);
+    color: #F9172B;
     /* justify-content: center; */
+    font-family: 'Lobster', cursive;
     align-items: center;
 }
 .card__image{
@@ -170,8 +176,8 @@ img{
     margin: 0.5cm;
     font-size: 2em;
     align-self: center;
-    color: rgb(58, 56, 56);
-    font-family: 'Abril Fatface', cursive;
+    color: #F9172B;
+    /* font-family: 'Abril Fatface', cursive; */
     min-height:50px ;
 }
 
@@ -180,15 +186,14 @@ img{
    
     text-align: left;
     font-size: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lobster', cursive;
 }
 .content p{
 
     min-height: 40px;
     font-size: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lobster', cursive;
 }
-
 .socials{
     display: flex;
     flex-direction: row;

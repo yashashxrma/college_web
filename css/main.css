@@ -2,6 +2,19 @@
     margin: 0%;
     padding: 0%;
 }
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: orange;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: blue;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid orange;  /* creates padding around scroll thumb */
+  }
 img{
     display: block;
     max-width: 100%;
@@ -71,7 +84,7 @@ html{
 .backg{
     /* padding-top: 3.8rem; */
     background-color: red;
-    background-image: url(../images/3.jpg); 
+    background-image: url(../images/backcheck.jpg); 
     background-size:cover ;
     width: 100%;
     height: 100vh;
@@ -80,7 +93,8 @@ html{
     
     
 }
-.page_content{
+.page_content,
+.change{
     position: absolute;
     font-family: 'Lobster', cursive;
     font-size: 60px;
@@ -90,9 +104,34 @@ html{
     align-self: center;
     transform: translate(-50%,-50%);
     color:silver;
-   
+    animation: text 3s 1;
+    font-weight: 100;
+    letter-spacing: 9px;
+    /* animation-direction: reverse; */
+    animation-delay: 1s;
 }
 
+@keyframes text {
+
+    0%{
+        color: black;
+        margin-bottom: -40%;
+        zoom: 105%;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+
+    }
+    60%{
+        letter-spacing: 15px;
+        margin-bottom: -40px;
+    }
+    90%{
+        letter-spacing: 9px;
+        margin-bottom: -40px;
+    }   
+}
 
 
 
@@ -108,7 +147,9 @@ html{
     
     /* background-color: #111e21; */
     background-color: black;
+    background-image: url(../images/pexels-jess-bailey-designs-743986.jpg);
     color: white;
+    background-size: cover;
     width: 100%;
     height: 100vh;
     float: left;
@@ -121,7 +162,7 @@ html{
 
 .page__3--content{
     background-color: black;
-    background-image: url(../images/alumni1.jpeg);
+    background-image: url(../images/25581.jpg);
     background-size: cover;
     /* filter: grayscale(100%); */
     /* filter: blur(7px); */
@@ -132,6 +173,7 @@ html{
     position: relative;
     align-self: center;
     text-align: center;
+    /* filter: blur(2px); */
 }
 
 
@@ -142,7 +184,56 @@ html{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    border-style: groove;
+    border-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height: 250px;
     max-width: 700px;
+    animation-name: box ;
+    animation-duration: 4s ;
+    animation-iteration-count: infinite;
+    /* filter: blur(0); */
+}
+@keyframes box {
+    0%{
+        border-color: black;
+    }
+    25%{
+        border-color: red;
+    }
+    50%{
+        border-color: yellow;
+    }
+    75%{
+        border-color: blueviolet;
+    }
+    100%{
+        border-color: purple;
+    }
+    
+}
+.page_box--2{
+    border-style: none;
+    box-shadow: none;
+
+   
+}
+
+.page_box--2 h1{
+    
+   
+    color:#E40039;
+}
+
+
+
+.page_box--2 p{
+    color:#5B3B5E;
+}
+
+
+.page_box--3{
+    border-radius: 10% 0 10% 0;
 }
 .headding{
     color: silver;
@@ -162,6 +253,7 @@ html{
     padding: 1em;
     font-size: 20px;
     background-color: rgba(255, 255, 255, 0.541);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     border-radius: 15px 50px 30px;
 }
 .read_more:link{
@@ -171,7 +263,12 @@ html{
 .read_more:hover{
     background-color: black;
 }
-
+.read_more--2{
+    color:#E40039;
+}
+.read_more--2:hover{
+    color: white;
+}
 
 
 /* footer */
