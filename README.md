@@ -33,11 +33,20 @@ source /usr/local/bin/virtualenvwrapper.sh
 source ~/.bashrc
 ```
 
+
+
 #### How to make a virtualenvs
 
 ```
 mkvirtualenv <name of your virtual environment>
 ```
+### For windows
+```
+python -m virtualenv .
+.\scripts\activate
+```
+
+
 ### Installing Django
 
 ```
@@ -50,6 +59,7 @@ pip3 install django~=3.1
 django-admin startproject <name of your project>
 cd <name of your project>
 ```
+
 
 #### Setting up the server
 ```
