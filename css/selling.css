@@ -77,12 +77,13 @@ body{
 }
 
 
-.card--sec{
+.card-sec{
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content:flex-start ;
     width: 100%;
 }
 
@@ -124,4 +125,18 @@ body{
 
 .card--button:hover{
     background-color: aquamarine;
+}
+
+@media (max-width:600px){
+    .card-sec{
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card{
+        align-self: center;
+    }
 }
