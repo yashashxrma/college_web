@@ -75,7 +75,6 @@ body{
         visibility: visible;
     }
 }
-
 .info{
     display: flex;
     flex-direction: row;
